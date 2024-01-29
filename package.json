@@ -1,0 +1,27 @@
+{
+  "name": "image-setter",
+  "version": "0.0.1",
+  "description": "Compress and Change your file format into desired output without headache.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://webwiser.in",
+  "repository": {
+    "url": "https://github.com/webwiserin/image-setter"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "image Compress",
+    "image resizer",
+    "PNG to jpeg",
+    "typescript file compressor"
+  ],
+  "author": "webwiserin",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

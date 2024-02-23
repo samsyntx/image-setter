@@ -87,3 +87,22 @@ convertToBase64(file)
   });
 
 ```
+
+### fileAsArrayBuffer
+
+Converts a Compressed Image into Binary string.
+
+```
+import { fileAsArrayBuffer } from 'image-setter';
+
+const file = /* your Image File */;
+
+fileAsArrayBuffer(file)
+  .then((bufferData) => {
+    // Handle the bufferData string as needed
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
+```

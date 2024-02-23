@@ -152,3 +152,17 @@ export const convertToBase64 = (file: File): Promise<string> => {
     reader.readAsDataURL(file);
   });
 };
+
+export const fileAsArrayBuffer = (file: File): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      resolve((event.target?.result ?? "") as string);
+    };
+    reader.onerror = (event) => {
+      reject(new Error("Failed to read file"));
+    };
+    reader.readAsArrayBuffer(file);
+  });
+};
+
